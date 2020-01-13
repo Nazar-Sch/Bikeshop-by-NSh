@@ -1,1 +1,455 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Milkshake";
+  src: url(../fonts/Milkshake/Milkshake400.ttf);
+}
+
+@font-face {
+  font-family: "OldStandartTT Regular";
+  src: url(../fonts/OldStandartTT/OldStandardTT-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OldStandartTT Italic";
+  src: url(../fonts/OldStandartTT/OldStandardTT-Italic.ttf);
+}
+
+@font-face {
+  font-family: "OldStandartTT Bold";
+  src: url(../fonts/OldStandartTT/OldStandardTT-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+@font-face {
+  font-family: "Ubuntu Italic";
+  src: url(../fonts/Ubuntu/Ubuntu-Italic.ttf);
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url(../fonts/MyriadPro/MyriadPro-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'OldStandardTT Regular';
+  font-weight: normal;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main {
+  background-image: url(../img/bg-main.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-right: 180px;
+  padding-left: 180px;
+  padding-top: 25px;
+  color: #ffffff;
+}
+
+.logo {
+  font-family: "Milkshake";
+  font-size: 47px;
+  line-height: 0.5;
+}
+
+.header-links-center__link,
+.header-links-right__link {
+  font-size: 18px;
+  font-family: "Ubuntu Regular";
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 1;
+}
+
+.header-links-center__link {
+  padding-right: 50px;
+}
+
+.header-links-center__link:last-child {
+  padding-right: 0;
+}
+
+.header-links-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-links-right__link {
+  padding-right: 10px;
+}
+
+.header-links-right__link:last-child {
+  padding-right: 0;
+}
+
+.shop-number {
+  color: #c2c1c1;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 188px;
+}
+
+.main-heading {
+  font-size: 61px;
+  font-family: "OldStandardTT Regular";
+  line-height: 1;
+  color: #ffffff;
+  padding-right: 168px;
+  padding-left: 168px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.main-sub-heading {
+  color: #c2c1c1;
+  font-size: 28px;
+  font-family: "Ubuntu Regular";
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.left-about {
+  padding-left: 150px;
+  padding-right: 90px;
+  padding-top: 100px;
+}
+
+.about-heading {
+  font-size: 48px;
+  font-family: "OldStandardTT Regular";
+  color: #3C3C3C;
+  line-height: 1;
+  text-align: left;
+  padding-bottom: 52px;
+}
+
+.about-description {
+  font-size: 18px;
+  font-family: "Ubuntu Light";
+  color: #6A6A6A;
+  line-height: 1.556;
+  text-align: left;
+  padding-bottom: 88px;
+}
+
+.about-button {
+  width: 165px;
+  text-transform: uppercase;
+  background-color: #3C3C3C;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  outline: 0.5px solid #ffffff;
+  outline-offset: -5px;
+}
+
+.sub-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub-about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+.gray-lines_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.gray-line {
+  background-color: #c2c1c1;
+  opacity: .5;
+}
+
+.gray-line-description__first {
+  height: 2px;
+  width: 143px;
+}
+
+.gray-line-description__second {
+  width: 2px;
+  height: 130px;
+}
+
+.sub-about-description__text {
+  color: #6A6A6A;
+  font-size: 18px;
+  font-family: "MyriadPro";
+  line-height: 1.556;
+  text-align: left;
+  padding-right: 75px;
+}
+
+.feature {
+  padding-top: 100px;
+}
+
+.feature-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-image {
+  width: 60%;
+  position: relative;
+}
+
+.main-image__item {
+  width: 100%;
+}
+
+.feature-wrapper-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature-wrapper-item:first-child {
+  width: 20%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.feature-wrapper-item:last-child {
+  width: 20%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.heading-feature {
+  font-size: 34.5px;
+  font-family: "OldStandardTT Regular";
+  color: #3C3C3C;
+  line-height: 1;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.sub-heading-feature {
+  font-size: 18px;
+  font-family: "Ubuntu Regular";
+  color: #6A6A6A;
+  line-height: 1.5;
+  text-align: center;
+  padding-right: 180px;
+  padding-left: 180px;
+  padding-bottom: 50px;
+}
+
+.size-buttons {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: #3C3C3C;
+}
+
+.size-zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60px;
+  height: 145px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #c2c1c1;
+  border-top: 2px solid #c2c1c1;
+  border-right: 2px solid #c2c1c1;
+}
+
+.size-buttons__item {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.size-buttons__item:last-child {
+  margin-bottom: 0;
+}
+
+.feature-item__main {
+  width: 100%;
+}
+
+.other-image__item {
+  padding-bottom: 10px;
+  width: 60%;
+  -webkit-box-shadow: -2px 2px 50px 1px rgba(106, 106, 106, 0.7);
+  box-shadow: -2px 2px 50px 1px rgba(106, 106, 106, 0.7);
+}
+
+.other-image__item:last-child {
+  padding-bottom: 0;
+}
+
+.size-buttons__item:hover .active-path {
+  fill: #ffffff;
+}
+
+.feature-wrapper-item__bike-zoom {
+  position: absolute;
+}
+
+.zoom-image-button {
+  position: absolute;
+}
+
+.pos1 {
+  top: 364px;
+  left: 166px;
+}
+
+.pos2 {
+  top: 150px;
+  left: 350px;
+}
+
+.pos3 {
+  right: 300px;
+  top: 110px;
+}
+
+.pos4 {
+  bottom: 175px;
+  left: 365px;
+}
+
+.pos5 {
+  bottom: 100px;
+  right: 45px;
+}
+
+.pos6 {
+  top: 100px;
+  right: 185px;
+}
+
+.components {
+  padding-top: 150px;
+}
+
+.components-button,
+.components-button:hover,
+.components-button:active,
+.components-button:focus {
+  background-color: #3C3C3C;
+  border: 0;
+}
+/*# sourceMappingURL=style.css.map */

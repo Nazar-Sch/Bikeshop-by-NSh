@@ -2,43 +2,27 @@ html
   head
     meta(charset="utf-8")
     title Bikeshop
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap")
-    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap")
+    link(rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
     link(rel="stylesheet", href="./styles/style.css")
   body
     main.main
       header.header
-        .logo Bikeshop
+        a.logo(href="#") Bikeshop
         .header-links-center
           a.header-links-center__link(href="#") Bikes
           a.header-links-center__link(href="#") Components
           a.header-links-center__link(href="#") Accesories
         .header-links-right
           a.header-links-right__link(href="#")
-            img(src="", alt="Shop Box")
-          a.header-links-right__link(href="#") Basket
-          a.header-links-right__link.shop__item(href="#") (0)
-      .main-wrapper
+            img.shop-basket(src="./img/shop-box.png", alt="Shop Basket")
+          a.header-links-right__link(href="#") Basket       
+          span.header-links-right__link.shop-number(href="#") (0)
+      .main-wrapper.container
         h2.main-heading Lorem ipsum dolor sit amet  consectetur adipisicing
-        .main-sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+        .main-sub-heading Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         a.main-button
-          img(src="", alt="Button Play")
-    section.about
-      .container
-        .row
-          .col-sm-6
-            h4.about-heading
-            .about-description
-            button.about-button Read more
-          .col-sm-6
-            img.about-image(src="", alt="Blue classic bike")
-      .container-fluid.sub-about
-        img.about-image__sub-about(src="", alt="Yellow woman's bike")
-        .sub-about-description
-          .gray-line-description__first
-          .gray-line-description__second
-          .sub-about-description__text
-        
-
-        
-
+           img.button-play(src="./img/play.png", alt="Button Play")
+    //- End of main
+    include modules/about.pug
+    include modules/feature.pug
+    include modules/components.pug
