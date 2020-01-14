@@ -405,11 +405,57 @@ $colorGrayDescrip: #6A6A6A;
   padding-top: 150px;
 }
 
-.components-button,
-.components-button:hover,
-.components-button:active,
-.components-button:focus,
-  {
+.components-bike {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.components-button__item,
+.components-button__item:hover,
+.components-button__item:active,
+.components-button__item:focus {
   background-color: $colorGrayHeading;
   border: 0;
+}
+
+.components-image {
+  width: 100%;
+}
+
+.components-text {
+  text-align: center;
+}
+
+.components-name {
+  font-family: $fontOldR;
+}
+
+.components-price {
+  font-family: $fontUbunutuR;
+}
+
+.components-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-wrapper {
+  background-image: url("../img/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.footer-card {
+  background-color: $colorWhite;
+  color: $colorWhite;
+  margin-top: 150px;
+}
+
+.footer-button {
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
 }

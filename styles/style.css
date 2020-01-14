@@ -445,11 +445,62 @@ a:active {
   padding-top: 150px;
 }
 
-.components-button,
-.components-button:hover,
-.components-button:active,
-.components-button:focus {
+.components-bike {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.components-button__item,
+.components-button__item:hover,
+.components-button__item:active,
+.components-button__item:focus {
   background-color: #3C3C3C;
   border: 0;
+}
+
+.components-image {
+  width: 100%;
+}
+
+.components-text {
+  text-align: center;
+}
+
+.components-name {
+  font-family: "OldStandardTT Regular";
+}
+
+.components-price {
+  font-family: "Ubuntu Regular";
+}
+
+.components-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-wrapper {
+  background-image: url("../img/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.footer-card {
+  background-color: #ffffff;
+  color: #ffffff;
+  margin-top: 150px;
+}
+
+.footer-button {
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */
