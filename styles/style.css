@@ -139,6 +139,12 @@ a:active {
           align-items: center;
 }
 
+@media (max-width: 567px) {
+  .header-links-center {
+    display: none;
+  }
+}
+
 .header-links-right__link {
   padding-right: 10px;
 }
@@ -218,11 +224,11 @@ a:active {
 
 .about-button {
   width: 165px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-transform: uppercase;
   background-color: #3C3C3C;
   color: #ffffff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   outline: 0.5px solid #ffffff;
   outline-offset: -5px;
 }
@@ -231,6 +237,10 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.about-image__sub-about {
+  width: 53%;
 }
 
 .sub-about-description {
@@ -499,8 +509,48 @@ a:active {
 }
 
 .footer-button {
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-bottom: 100px;
+}
+
+.heading-feature {
+  font-size: 46px;
+}
+
+.footer-heading {
+  padding-top: 60px;
+}
+
+.footer-button__input {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #c2c1c1;
+}
+
+.footer-button__input:hover, .footer-button__input:focus, .footer-button__input:active {
+  background-color: #c2c1c1;
+}
+
+.footer-button__item {
+  text-transform: uppercase;
+  background-color: #3C3C3C;
+  color: #ffffff;
+  outline: 0.5px solid #ffffff;
+  outline-offset: -5px;
+}
+
+.footer-line {
+  width: 100%;
+  height: 2px;
+  background-color: #c2c1c1;
+  opacity: .5;
+  margin-top: 125px;
+}
+
+.footer-text,
+.by {
+  padding-top: 25px;
+  color: #c2c1c1;
 }
 /*# sourceMappingURL=style.css.map */
