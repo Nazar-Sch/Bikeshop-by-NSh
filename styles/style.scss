@@ -329,16 +329,29 @@ $colorGrayDescrip: #6A6A6A;
   @media (max-width: 769px) {
     padding-top: 40px;
   }
+
+  @media (max-width: 380px) {
+    flex-wrap: wrap;
+  }
 }
 
 .about-image__sub-about {
   width: 53%;
+
+  @media (max-width: 380px) {
+    width: 90%;
+  }
 }
 
 .sub-about-description {
   display: flex;
   align-items: center;
   padding-bottom: 100px;
+
+  @media (max-width: 568px) {
+    padding-left: 25px;
+    padding-bottom: 0px;
+  }
 }
 
 .gray-lines_item {
@@ -347,7 +360,7 @@ $colorGrayDescrip: #6A6A6A;
   transform: translateX(-20px);
 
   @media (max-width: 568px) {
-    width: 25%;
+    display: none;
   }
 }
 
@@ -423,6 +436,10 @@ $colorGrayDescrip: #6A6A6A;
   text-align: center;
   padding-bottom: 50px;
 
+  @media (max-width: 769px) {
+    font-size: 32px;
+  }
+
   @media (max-width: 568px) {
     font-size: 28px;
   }
@@ -439,11 +456,12 @@ $colorGrayDescrip: #6A6A6A;
   padding-left: 180px;
   padding-bottom: 50px;
 
-  @media (max-width: 568px) {
+  @media (max-width: 769px) {
+    font-size: 14px;
     padding-right: 25px;
     padding-left: 25px;
-    font-size: 14px;
   }
+
 }
 
 .size-buttons {
@@ -615,6 +633,14 @@ $colorGrayDescrip: #6A6A6A;
 .components-button__item:focus {
   background-color: $colorGrayHeading;
   border: 0;
+
+  @media (max-width: 769px) {
+    width: 100%;
+  }
+}
+
+.card-components {
+  text-align: center;
 }
 
 .components-image {
@@ -627,10 +653,12 @@ $colorGrayDescrip: #6A6A6A;
 
 .components-name {
   font-family: $fontOldR;
+  text-align: center;
 }
 
 .components-price {
   font-family: $fontUbunutuR;
+  text-align: center;
 }
 
 .components-button {
@@ -645,6 +673,11 @@ $colorGrayDescrip: #6A6A6A;
   background-size: 100% 100%;
   background-position: 50% 50%;
   height: 100vh;
+  margin-top: 50px;
+
+  @media (max-width: 568px) {
+    background-size: 200% 100%;
+  }
 }
 
 .footer-card {
@@ -657,13 +690,34 @@ $colorGrayDescrip: #6A6A6A;
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 100px;
+
+  @media (max-width: 768px) {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
 }
 
 
 .footer-heading {
   padding-top: 60px;
+
+  @media (max-width: 568px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
+.footer-description {
+  @media (max-width: 568px) {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+.footer-button {
+    @media (max-width: 568px) {
+      padding-bottom: 50px;
+    }
+}
 .footer-button__input {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -686,12 +740,16 @@ $colorGrayDescrip: #6A6A6A;
   background-color: $colorGrey;
   opacity: .5;
   margin-top: 125px;
+
 }
 
 .footer-text,
 .by {
   padding-top: 25px;
   color: $colorGrey;
+  @media (max-width: 568px) {
+    font-size: 12px;
+}
 }
 
 .button-transform {
